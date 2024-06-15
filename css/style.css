@@ -123,7 +123,7 @@
   margin-top: -3px;
   vertical-align: middle;
 }
-.radio_group:checked + .radio_text:before {
+.radio:checked + .radio_text:before {
   background-image: url(../svg/form-circle.svg);
 }
 .radio_group_all{
@@ -486,9 +486,8 @@
   margin-top: 60px;
 }
 .search {
-  width: 272px;
-  position: relative;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 48px;
 }
 .button_search {
   background-image: url("../svg/search.svg");
@@ -1065,7 +1064,7 @@ a {
 
   .name-title {
     font-size: 40px;
-    margin-top: 80px;
+    margin-top: 90px;
     margin-left: 50px;
     margin-right: 50px;
     max-width: 100%;
@@ -1125,6 +1124,8 @@ a {
     margin-top: 20px;
     padding-bottom: 10px;
     border-bottom: 2px solid rgb(215, 213, 213);
+    display: block;
+    line-height: 1.5;	
   }
 
   .card_img{
@@ -1218,9 +1219,5 @@ a {
   .menu-button:after {
     bottom: 0;
   }		
-  @media (orientation: landscape) {
-    .trend_post_all {
-      flex-wrap: nowrap;
-    }
-  }
+  
 }
