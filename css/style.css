@@ -463,6 +463,18 @@
   display: block;
   margin-top: 15px;
 }
+.latest_post_headert::after {
+  content: '';
+  background-color: #e1d9bd;
+  width: 66px;
+  height: 3px;
+  left: 50%;
+  transform: translateX(-50%);
+  position: relative;
+  display: block;
+  margin-top: 15px;
+
+}
 .latest_post {
   display: flex;
   flex-direction: row;
@@ -475,6 +487,16 @@
   width: 100%;
 }
 .latest_post_header {
+  font-size: 14px;
+  color: #0f0d0e;
+  font-weight: bold;
+  text-transform: uppercase; 
+  margin-bottom: 25px;
+  margin-top: 60px;
+  padding: 0;
+  text-align: center;
+}
+.latest_post_headert {
   font-size: 14px;
   color: #0f0d0e;
   font-weight: bold;
@@ -899,6 +921,11 @@ a {
     margin-top: 45px;
     font-size: 16PX;
   }
+  .latest_post_headert{
+    margin-top: 45px;
+    font-size: 16PX;
+  }
+
   .latest_post_header:nth-child(5n-1){
     margin-bottom: 0px;
   }
@@ -1097,6 +1124,7 @@ a {
     margin-top: 50px;
     font-size: 18px;
     margin-bottom: 20px;
+    
   }
   .page {
     gap: 40px;
@@ -1104,7 +1132,16 @@ a {
     margin-top: 20px;
     margin-right: 20px;
   }
-  
+  p {
+    margin-top: 10px;
+  }
+  .button_email {
+    margin-bottom: 15px;
+  }
+
+  .tags {
+    margin-bottom: 25px;
+  }
   .article{
     display: flex;
     flex-wrap: wrap;
@@ -1154,7 +1191,7 @@ a {
     flex-wrap: wrap;
   }
   .product{
-    width: calc(50% - 25px);
+    width: calc(50% - 15px);
   }
   .post_products{
     margin-top: 27px;		
@@ -1162,8 +1199,12 @@ a {
   .latest_post_header:nth-child(n+2){
     margin-top: 65px;
   }
+
   .latest_post_header:nth-child(-n+1){
     margin-top: 28px;
+  }
+  .latest_post_headert{
+    padding-bottom: 0px;
   }
   .categories_title{
     margin-bottom: 0;
@@ -1183,10 +1224,10 @@ a {
     margin: 2px 5px 5px;
   }
   .our_products {
-    padding: 20px 30px 40px 30px;	
+    padding: 0px 30px 40px 30px;	
   }
   .product_image{
-    width: 290px;
+    width: 300px;
     height: 225px;
     object-fit: cover;
   }
@@ -1194,7 +1235,7 @@ a {
     margin-top: 195px;
     padding-left: 20px;
     padding-right: 20px;
-    padding-bottom: 15px;
+    padding-bottom: 25px;
     flex-grow: 1;
     border: 3px solid #b59f5b;
     z-index: 1;
@@ -1202,7 +1243,9 @@ a {
     padding-top: 50px;
 
   } 
-
+  .address_bar_container {
+    padding: 25px 0;
+  }
   .address {
     padding: 45px 0 46px 0;
   }
